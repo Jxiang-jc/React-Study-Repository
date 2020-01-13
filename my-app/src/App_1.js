@@ -12,8 +12,8 @@ class App extends React.Component {
         console.log(`ComponentDidMount ${STR}`, this)
     }
 
-    componentWillReceiveProps() {
-        console.log(`componentWillReceiveProps ${STR}`, this)
+    UNSAFE_componentWillReceiveProps() {
+        console.log(`UNSAFE_componentWillReceiveProps ${STR}`, this)
     }
 
     shouldComponentUpdate() {

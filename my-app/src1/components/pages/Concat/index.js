@@ -10,10 +10,10 @@ class Concat extends Component {
     constructor (props) {
         super(props)
     }
-    componentWillReceiveProps (props) {
+    UNSAFE_componentWillReceiveProps (props) {
         console.log('组件已经切换了',props.location.pathname)
     }
-    componentWillMount () {
+    UNSAFE_componentWillMount () {
         //在进入到concat的时候，再跳转到子路由phone
         this.props.history.replace(`${this.props.match.path}/phone`)
     }

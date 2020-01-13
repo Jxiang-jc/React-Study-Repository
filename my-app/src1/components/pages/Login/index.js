@@ -15,7 +15,7 @@ class Login extends Component {
         let action = actionCreator.login('Jxiang')
         this.store.dispatch(action)
     }
-    componentWillMount() {
+    UNSAFE_componentWillMount() {
         // store.subscribe 方法重传入的函数会等到store重状态改变的时候执行
         this.store.subscribe(() => {
             if (this.store.getState().user_info) {

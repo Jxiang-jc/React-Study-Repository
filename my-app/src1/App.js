@@ -9,13 +9,13 @@ import AppLogin from './components/pages/Login'
 import AppNotFound from './components/pages/NotFound'
 
 class App extends Component {
-	componentWillReceiveProps(props) {
+	UNSAFE_componentWillReceiveProps(props) {
 		//全局判断登录状态, 如果确实是路由变化了
 		if (props.location.pathname !== this.props.location.pathname) {
 			this.checkLogin(props)
 		}
 	}
-	componentWillMount() { //当刚刚进入到项目的时候，判断当前是不是需要判断登录的页面
+	UNSAFE_componentWillMount() { //当刚刚进入到项目的时候，判断当前是不是需要判断登录的页面
 		this.checkLogin(this.props)
 	}
 	checkLogin(props) {
