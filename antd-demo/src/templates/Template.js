@@ -2,12 +2,12 @@
 import React, { Component } from 'react'
 
 class Template extends Component {
-    constructor (props) {
+    constructor(props) {
         super(props)
     }
-    render () {
+    render() {
         return (
-            <div className = "template">
+            <div className="template">
 
             </div>
         )

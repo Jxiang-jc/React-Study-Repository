@@ -1,14 +1,15 @@
 
 import React, { Component } from 'react'
 import './index.scss'
-class Home extends Component {
+class Board extends Component {
     render() {
         return (
-            <div className="app-home">
-                Hello ,this is Home!
+            <div className="app-board">
+                Hello ,this is Board!
             </div>
         )
     }
+
 }
 
-export default Home
+export default Board

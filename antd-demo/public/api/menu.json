@@ -4,6 +4,7 @@
         {
             "title": "OA系统",
             "path": "/",
+            "key": "sub0",
             "children": [
                 {
                     "title": "后台首页",
@@ -18,6 +19,7 @@
         {
             "title": "考勤管理",
             "path": "/attend",
+            "key": "sub1",
             "children": [
                 {
                     "title": "我的考勤",
@@ -26,6 +28,21 @@
                 {
                     "title": "请假加班",
                     "path": "/attend/leave-work"
+                }
+            ]
+        },
+        {
+            "title": "Jxaing Test",
+            "path": "/jxTest",
+            "key": "sub3",
+            "children": [
+                {
+                    "title": "我的测试1",
+                    "path": "/jxTest/test1"
+                },
+                {
+                    "title": "我的测试2",
+                    "path": "/jxTest/test2"
                 }
             ]
         }

@@ -41,7 +41,7 @@ class App extends Component {
     }
 
     render() {
-        console.log('this.props', this.props)
+        // console.log('this.props', this.props)
         return (
             <div className="App">
                 {/* 封装了路由。这里相当于插槽 */}

@@ -3,12 +3,12 @@ import React, { Component } from 'react'
 import './index.scss'
 
 class Template extends Component {
-    constructor (props) {
+    constructor(props) {
         super(props)
     }
-    render () {
+    render() {
         return (
-            <div className = "template">
+            <div className="template">
 
             </div>
         )
