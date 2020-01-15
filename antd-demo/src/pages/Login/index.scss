@@ -14,7 +14,6 @@ a{text-decoration:none;}
 .txt-center{text-align:center;}/* text align center */
 .float-rt{float:right;}/* float right */
 .float-lt{float:left;}/* float left */
-.clear{clear:both;}/* clear float */
 .pos-relative{position:relative;}/* Position Relative */
 .pos-absolute{position:absolute;}/* Position Absolute */
 .vertical-base{	vertical-align:baseline;}/* vertical align baseline */
@@ -35,12 +34,12 @@ body{
 	margin: 0 auto;
 	width: 80%;
 }
-body a,form li,input[type="submit"],input[type="text"],.sixth-login input[type="submit"],.third-login input[type="submit"]{
-	transition: 0.1s all;
-	-webkit-transition: 0.1s all;
-	-moz-transition: 0.1s all;
-	-o-transition: 0.1s all;
-}
+// body a,form li,input[type="submit"],input[type="text"],.sixth-login input[type="submit"],.third-login input[type="submit"]{
+// 	transition: 0.1s all;
+// 	-webkit-transition: 0.1s all;
+// 	-moz-transition: 0.1s all;
+// 	-o-transition: 0.1s all;
+// }
 /*--close--*/
 .close{
 background: url('/images/login/close.png') no-repeat 0px 0px;
@@ -186,32 +185,32 @@ label.lbl-3 {
   margin: 16px 10px 0px 0px;
 }
 /*--copyrights--*/
-.copy-rights{
-	text-align: center;
-	margin-top: 8em;
-}
-.copy-rights p{
-	color:#FFF;
-	font-size: 1em;
-	line-height:1.8em;
-}
-.copy-rights p a{
-	color:#ff2a75;
-	-webkit-transition: all 0.3s ease-out;
-	-moz-transition: all 0.3s ease-out;
-	-ms-transition: all 0.3s ease-out;
-	-o-transition: all 0.3s ease-out;
-	transition: all 0.3s ease-out;
-	text-decoration:none;
-}
-.copy-rights p a:hover{
-	color:#3faa53;
-	text-decoration:none;
-		transition: 0.1s all;
-	-webkit-transition: 0.1s all;
-	-moz-transition: 0.1s all;
-	-o-transition: 0.1s all;
-}
+// .copy-rights{
+// 	text-align: center;
+// 	margin-top: 8em;
+// }
+// .copy-rights p{
+// 	color:#FFF;
+// 	font-size: 1em;
+// 	line-height:1.8em;
+// }
+// .copy-rights p a{
+// 	color:#ff2a75;
+// 	-webkit-transition: all 0.3s ease-out;
+// 	-moz-transition: all 0.3s ease-out;
+// 	-ms-transition: all 0.3s ease-out;
+// 	-o-transition: all 0.3s ease-out;
+// 	transition: all 0.3s ease-out;
+// 	text-decoration:none;
+// }
+// .copy-rights p a:hover{
+// 	color:#3faa53;
+// 	text-decoration:none;
+// 		transition: 0.1s all;
+// 	-webkit-transition: 0.1s all;
+// 	-moz-transition: 0.1s all;
+// 	-o-transition: 0.1s all;
+// }
 /*--/copyrights--*/
 /*--start-responsive-design--*/
 @media (max-width:1440px){
