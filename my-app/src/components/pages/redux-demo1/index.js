@@ -24,8 +24,8 @@ const themeReducer = (state, action) => {
     switch (action.type) {
         case "CHANGE_COLOR":
             return { ...state, themeColor: action.themeColor };
-        default:
-            return state;
+    default:
+        return state;
     }
 };
 
@@ -36,7 +36,7 @@ class ReduxDemo extends Component {
         return (
             <Provider store={store}>
                 <div>
-                    <Header jxTest='Jxiang666'/>
+                    <Header jxTest="Jxiang666" />
                     <Content />
                 </div>
             </Provider>
