@@ -44,9 +44,9 @@ export const addComment = comment => {
     };
 };
 
-export const deleteComment = commentIndx => {
+export const deleteComment = commentIndex => {
     return {
         type: DELETE_COMMENT,
-        commentIndx
+        commentIndex
     };
 };
