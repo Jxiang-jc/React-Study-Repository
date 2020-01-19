@@ -17,7 +17,7 @@ export default function HooksPage() {
     );
 }
 
-// 自定义Hook
+// 自定义Hook 必须use 开头。 auseaa、useaaa都是错的。useAaa才是正确的写法
 function useClock() {
     const [date, setDate] = useState(new Date());
     // 副作用。 return相当于组件unmount的时候执行。第二个参数是一个数组。关联了哪个参数，哪个参数改变就会触发一次useEffect
