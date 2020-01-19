@@ -2,6 +2,10 @@ import React from "react";
 import { Provider, Consumer } from "./AppContext";
 import HomePage from "./pages/HomePage";
 import HocPage from "./pages/HocPage";
+import UserPage from "./pages/UserPage";
+import HooksPage from "./pages/HooksPage";
+import UseReducerPage from "./pages/UseReducerPage";
+import UseContextPage from "./pages/UseContextPage";
 
 function Child(props) {
     return (
@@ -14,7 +18,8 @@ function Child(props) {
 
 const store = {
     user: {
-        name: "哪吒"
+        name: "哪吒",
+        Jxiang: '777'
     }
 };
 
@@ -25,7 +30,11 @@ function App() {
                 {/* <Consumer>{ctx => <Child {...ctx} />}</Consumer> */}
                 {/* <Consumer>{ctx => <HomePage {...ctx} />}</Consumer> */}
                 {/* <HomePage /> */}
-                <HocPage />
+                {/* <HocPage /> */}
+                {/* <UserPage /> */}
+                {/* <HooksPage /> */}
+                {/* <UseReducerPage /> */}
+                <UseContextPage />
             </Provider>
         </div>
     );
