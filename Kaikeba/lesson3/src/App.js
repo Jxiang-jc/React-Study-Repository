@@ -20,11 +20,11 @@ function App() {
             {/* <FormPage /> */}
             {/* <FormPageAntd /> */}
             {/* <MyFormPage /> */}
-            {/* <DialogPage /> */}
+            <DialogPage />
             {/* <TreePage /> */}
             {/* <CommenetListPage /> */}
             {/* <PureComponentPage /> */}
-            <ReactMemoPage />
+            {/* <ReactMemoPage /> */}
         </div>
     )
 }
