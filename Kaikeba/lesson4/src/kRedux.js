@@ -50,8 +50,11 @@ function compose(...funcs) {
     } else if (len === 1) {
         return funcs[0];
     } else {
+        console.log('funcs111', funcs)
         return funcs.reduce((a, b) => {
-           return (...args) => b(a(...args))
-        })
+            console.log("TCL: compose -> a", a());
+            console.log("TCL: compose -> b", b);
+            return (...args) => b(a(...args));
+        });
     }
 }

@@ -15,6 +15,7 @@ export const connect = (
     const getMoreProps = () => {
         const stateProps = mapStateToProps(store.getState());
         const dispatchProps = bindActionCreators(mapDispatchToProps, store.dispatch);
+        console.log("TCL: getMoreProps -> 12313123123", dispatchProps)
         return {
             ...stateProps,
             ...dispatchProps
