@@ -4,8 +4,10 @@ import styles from "./searchInput.module.scss";
 import classnames from "classnames";
 
 function SearchInput(props) {
-    const { showSearchPage } = props;
-    const toSearchPage = () => {};
+    const { showSearchPage, history } = props;
+    const toSearchPage = () => {
+        history.push('/productList')
+    };
     return (
         <div className={styles.searchInput}>
             {showSearchPage ? (

@@ -1,0 +1,15 @@
+{
+  "name": "mock-server",
+  "version": "1.0.0",
+  "description": "mock-server",
+  "main": "index.js",
+  "scripts": {
+    "start": "json-server --watch ../mock/index.js --port 8088"
+
+  },
+  "author": "Jxiang",
+  "license": "ISC",
+  "dependencies": {
+    "json-server": "^0.15.1"
+  }
+}
