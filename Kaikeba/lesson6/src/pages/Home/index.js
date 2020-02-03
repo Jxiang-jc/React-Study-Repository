@@ -6,6 +6,7 @@ import homeOther from "./homeOther.png";
 import SearchInput from "./components/SearchInput";
 import NavMall from "./components/NavMall";
 import { getHomeCarousel, getMallNav } from "../../action/homeAction";
+import Carousel from "../../components/Carousel";
 
 @connect(
     state => {
@@ -43,7 +44,9 @@ class Home extends Component {
             >
                 <div className={styles.home}>
                     <SearchInput showSearchPage={showSearchPage} history={history} />
-                    <section className={styles.part1}></section>
+                    <section className={styles.part1}>
+                        <Carousel data={homeCarousel} />
+                    </section>
                     <section className={styles.part2}>
                         <NavMall data={mallNav} />
                     </section>

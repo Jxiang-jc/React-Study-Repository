@@ -14,7 +14,6 @@ export default function NavMall(props) {
 }
 
 function Nav(props) {
-    console.log("TCL: 123456789123", props);
     const { icon, title, link } = props.data;
     return (
         <li className={styles.nav}>
