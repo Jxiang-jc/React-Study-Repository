@@ -3,7 +3,6 @@ import styles from "./navMall.module.scss";
 
 export default function NavMall(props) {
     const { data } = props;
-    //console.log('props', props)
     return (
         <ul className={styles.navMall}>
             {data.map((item, index) => {
