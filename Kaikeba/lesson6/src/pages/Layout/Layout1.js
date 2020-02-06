@@ -16,7 +16,7 @@ const menu = [
     {
         title: "我的",
         icon: "wode",
-        link: "/user"
+        link: "/login"
     }
 ];
 

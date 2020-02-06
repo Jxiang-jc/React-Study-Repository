@@ -4,7 +4,7 @@ import styles from "./searchInput.module.scss";
 import classnames from "classnames";
 
 function SearchInput(props) {
-    const { showSearchPage, history } = props;
+    const { showSearchPage, history, setShowSearchPage } = props;
     const toSearchPage = () => {
         history.push('/productList')
     };
@@ -14,7 +14,7 @@ function SearchInput(props) {
                 <div className={styles.iconBox}>
                     <i
                         className={classnames(styles.iconfont, "iconfont icon-jiantou-copy")}
-                        onclick={() => {}}
+                        onClick={() => {setShowSearchPage(false)}}
                     ></i>
                 </div>
             ) : (
@@ -36,7 +36,9 @@ function SearchInput(props) {
                         "iconfont icon-sousuo"
                     )}
                 ></i>
-                <input placeholder="京东商城" onFocus={() => {}} />
+                <input placeholder="京东商城" onFocus={() => {
+                    setShowSearchPage(true)
+                }} />
             </div>
             {showSearchPage ? (
                 <div className={styles.iconBox}>

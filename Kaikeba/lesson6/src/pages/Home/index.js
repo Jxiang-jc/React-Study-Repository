@@ -10,7 +10,6 @@ import Carousel from "../../components/Carousel";
 
 @connect(
     state => {
-        // console.log("TCL: state", state)
         return {
             data: state.home
         };
@@ -32,6 +31,11 @@ class Home extends Component {
         this.props.getMallNav();
     }
 
+    setShowSearchPage = val => {
+        this.setState({
+            showSearchPage: !!val
+        })
+    }
     render() {
         const { data, history } = this.props;
         const { homeCarousel, mallNav = [] } = data;
@@ -43,7 +47,11 @@ class Home extends Component {
                 shortIcon="//m.jd.com/favicon.ico"
             >
                 <div className={styles.home}>
-                    <SearchInput showSearchPage={showSearchPage} history={history} />
+                    <SearchInput
+                        showSearchPage={showSearchPage}
+                        history={history}
+                        setShowSearchPage={this.setShowSearchPage}
+                    />
                     <section className={styles.part1}>
                         <Carousel data={homeCarousel} />
                     </section>

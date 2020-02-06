@@ -24,3 +24,7 @@ import classnames from 'classnames'
     )>
 </div>
 ```
+
+#### 1.yarn install 2. yarn start
+
+#### 1.在mock-serve中 yarn install 2. yarn start

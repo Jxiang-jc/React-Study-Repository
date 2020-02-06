@@ -4,6 +4,8 @@ import Home from "./Home";
 import _404 from "./404/";
 import ProductList from "./Product";
 import Search from "./Search";
+import SearchWithInputPage from "./SearchWithInputPage";
+import Login from './Login'
 
 function Router(props) {
     return (
@@ -12,6 +14,8 @@ function Router(props) {
             <Route exact path="/home" component={Home}></Route>
             <Route path="/productList" component={ProductList}></Route>
             <Route path="/search" component={Search}></Route>
+            <Route path="/searchWithInputPage" component={SearchWithInputPage}></Route>
+            <Route path="/login" component={Login} ></Route>
             <Route component={_404}></Route>
         </Switch>
     );
