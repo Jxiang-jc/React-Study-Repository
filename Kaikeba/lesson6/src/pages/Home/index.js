@@ -11,7 +11,8 @@ import Carousel from "../../components/Carousel";
 @connect(
     state => {
         return {
-            data: state.home
+            data: state.home,
+            user: state.user
         };
     },
     {
@@ -37,7 +38,7 @@ class Home extends Component {
         })
     }
     render() {
-        const { data, history } = this.props;
+        const { data, history, user } = this.props;
         const { homeCarousel, mallNav = [] } = data;
         const { showSearchPage } = this.state;
         return (
@@ -51,6 +52,7 @@ class Home extends Component {
                         showSearchPage={showSearchPage}
                         history={history}
                         setShowSearchPage={this.setShowSearchPage}
+                        user={user}
                     />
                     <section className={styles.part1}>
                         <Carousel data={homeCarousel} />

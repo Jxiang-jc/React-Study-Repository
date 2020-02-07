@@ -21,7 +21,7 @@ export default function LeftCatgories(props) {
 
 function Node(props) {
     const { data, active, changeFirst } = props;
-    const { id, title } = data;
+    const { title } = data;
 
     return (
         <div className={"node" + (active ? " node-active" : "")} onClick={changeFirst}>

@@ -14,7 +14,7 @@ export default function RightCatgories(props) {
 
 function Node(props) {
     const { data, active } = props;
-    const { id, title, children } = data;
+    const { title, children } = data;
     return (
         <div className={"node" + (active ? " node-active" : "")}>
             <div className="nodeTitle">{title}</div>

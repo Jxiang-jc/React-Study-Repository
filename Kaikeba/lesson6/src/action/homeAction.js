@@ -1,4 +1,4 @@
-import { getHomeCarouselRequest, getMallNavRequest, queryCurrent } from "../services/home";
+import { getHomeCarouselRequest, getMallNavRequest } from "../services/home";
 
 export const getHomeCarousel = payload => dispatch => {
     getHomeCarouselRequest().then((res = {}) => {

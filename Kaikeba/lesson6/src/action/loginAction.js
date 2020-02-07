@@ -1,7 +1,6 @@
 import { loginRequest, getUserInfoRequest } from "../services/login";
 
 export const loginPost = payload => dispatch => {
-    console.log('jx66666')
     loginRequest().then((res = {}) => {
         dispatch({
             type: "login",

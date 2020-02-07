@@ -4,9 +4,10 @@ import styles from "./searchInput.module.scss";
 import classnames from "classnames";
 
 function SearchInput(props) {
-    const { showSearchPage, history, setShowSearchPage } = props;
+    const { user, showSearchPage, history, setShowSearchPage } = props;
+    const { isLogin } = user;
     const toSearchPage = () => {
-        history.push('/productList')
+        history.push("/productList");
     };
     return (
         <div className={styles.searchInput}>
@@ -14,7 +15,9 @@ function SearchInput(props) {
                 <div className={styles.iconBox}>
                     <i
                         className={classnames(styles.iconfont, "iconfont icon-jiantou-copy")}
-                        onClick={() => {setShowSearchPage(false)}}
+                        onClick={() => {
+                            setShowSearchPage(false);
+                        }}
                     ></i>
                 </div>
             ) : (
@@ -36,9 +39,12 @@ function SearchInput(props) {
                         "iconfont icon-sousuo"
                     )}
                 ></i>
-                <input placeholder="京东商城" onFocus={() => {
-                    setShowSearchPage(true)
-                }} />
+                <input
+                    placeholder="京东商城"
+                    onFocus={() => {
+                        setShowSearchPage(true);
+                    }}
+                />
             </div>
             {showSearchPage ? (
                 <div className={styles.iconBox}>
@@ -48,11 +54,11 @@ function SearchInput(props) {
                 </div>
             ) : (
                 <Link to="/user" className={styles.iconBox}>
-                    {/* {isLogin ? (
+                    {isLogin ? (
                         <i className={classnames(styles.iconfont, "iconfont icon-wode")}></i>
                     ) : (
                         <span className={styles.loginBtn}>登录</span>
-                    )} */}
+                    )}
                 </Link>
             )}
             {showSearchPage && <div className={styles.searchPage}>更多搜索选择项</div>}

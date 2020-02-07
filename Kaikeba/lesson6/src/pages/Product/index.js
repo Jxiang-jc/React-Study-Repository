@@ -22,7 +22,7 @@ class ProductList extends Component {
     }
 
     render() {
-        const { data, history } = this.props;
+        const { data } = this.props;
         const { productList = [] } = data;
         return (
             <Layout1

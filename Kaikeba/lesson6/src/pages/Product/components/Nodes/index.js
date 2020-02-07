@@ -18,7 +18,7 @@ function Node(props) {
     return (
         <div className="node">
             <div className="imgBox">
-                <img src={img} />
+                <img src={img} alt="" />
             </div>
             <div className="ctn">
                 <div className="title">{title}</div>

@@ -10,7 +10,7 @@ const loginReducer = (state = { ...initialState }, action) => {
             return {
                 ...state,
                 userInfo: action.state,
-                isLogin: action.state.id !== null ? true : false
+                isLogin: action.state.id ? true : false
             };
         default:
             return state;

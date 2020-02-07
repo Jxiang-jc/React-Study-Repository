@@ -12,7 +12,6 @@ export default function LoginItem(props) {
     };
 
     const login = () => {
-        console.log(777)
         const { loginPost } = props;
         loginPost({
             userName: "gao",
@@ -20,17 +19,17 @@ export default function LoginItem(props) {
         });
     };
 
+    const [userName, setUserName] = useState("");
+    const [pass, setPass] = useState("");
+    const [btnActive, setBtnActive] = useState(false);
+
     useEffect(() => {
         if (userName.trim().length > 8 && pass.trim().length > 6) {
             setBtnActive(true);
         } else {
             setBtnActive(false);
         }
-    });
-
-    const [userName, setUserName] = useState("");
-    const [pass, setPass] = useState("");
-    const [btnActive, setBtnActive] = useState(false);
+    }, [userName, pass]);
 
     return (
         <div className="loginForm">
